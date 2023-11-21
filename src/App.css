@@ -1,0 +1,49 @@
+.FirstSemiFinal{
+  width: 728px;
+  height: 90px;
+  background-image: url('./asset/bg.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sideBySideContainer {
+  display: flex;
+  align-items: center;
+
+  /* Adjust spacing and other styles as needed */
+}
+
+
+
+.clockContainer{
+padding-left: 140px;
+
+
+}
+
+.lastImg{
+  height: 250px;
+  width: 300px;
+}
+
+/* Define zoom animation */
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1); /* Zoom normal */
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+  }
+}
+
+/* Apply the animation to the img tag */
+.img-zoom {
+  position: relative;
+  animation: zoom 5s infinite;
+  height: 70px;
+  padding-top: 8px;
+  padding-left: 95px;
+  left: 50%; /* Position from the center */
+  transform: translateX(-50%); 
+}
